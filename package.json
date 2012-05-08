@@ -9,6 +9,11 @@
     "mocha": "*",
     "should": "*"
   }
+  , "component": {
+    "scripts": {
+      "suggest": "lib/suggest-email.js"
+    }
+  }
   , "main": "index"
   , "engines": { "node": "*" }
 }
