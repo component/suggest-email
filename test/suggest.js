@@ -21,4 +21,19 @@ describe('suggest(email)', function(){
       suggest('tobi@').should.equal('');
     })
   })
+
+  describe('when @ is present', function(){
+    it('should return suggestions', function(){
+      suggest('tobi@g').should.equal('gmail.com');
+      suggest('tobi@gm').should.equal('gmail.com');
+      suggest('tobi@gma').should.equal('gmail.com');
+      suggest('tobi@gmal').should.equal('');
+
+      suggest('tobi@h').should.equal('hotmail.com');
+      suggest('tobi@hotma').should.equal('hotmail.com');
+      suggest('tobi@hotmail.').should.equal('hotmail.com');
+      suggest('tobi@hotmail.c').should.equal('hotmail.com');
+      suggest('tobi@hotmail.com').should.equal('hotmail.com');
+    })
+  })
 })
