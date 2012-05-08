@@ -3,11 +3,30 @@
 
   Email suggestion script
 
+## Example
+
+```js
+suggest('foo')
+// => ""
+
+suggest('foo@')
+// => ""
+
+suggest('foo@g')
+// => "gmail.com"
+
+suggest('foo@gmail')
+// => "gmail.com"
+
+suggest('foo@hot')
+// => "hotmail.com"
+```
+
 ## License 
 
 (The MIT License)
 
-Copyright (c) 2011 TJ Holowaychuk &lt;tj@learnboost.com&gt;
+Copyright (c) 2012 TJ Holowaychuk &lt;tj@learnboost.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
