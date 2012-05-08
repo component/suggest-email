@@ -34,6 +34,8 @@ describe('suggest(email)', function(){
       suggest('tobi@hotmail.').should.equal('hotmail.com');
       suggest('tobi@hotmail.c').should.equal('hotmail.com');
       suggest('tobi@hotmail.com').should.equal('hotmail.com');
+      suggest('tobi@hotmail.co').should.equal('hotmail.com');
+      suggest('tobi@hotmail.co.').should.equal('hotmail.co.uk');
     })
   })
 })
