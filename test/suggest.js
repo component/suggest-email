@@ -24,18 +24,18 @@ describe('suggest(email)', function(){
 
   describe('when @ is present', function(){
     it('should return suggestions', function(){
-      suggest('tobi@g').should.equal('gmail.com');
-      suggest('tobi@gm').should.equal('gmail.com');
-      suggest('tobi@gma').should.equal('gmail.com');
+      suggest('tobi@g').should.equal('mail.com');
+      suggest('tobi@gm').should.equal('ail.com');
+      suggest('tobi@gma').should.equal('il.com');
       suggest('tobi@gmal').should.equal('');
 
-      suggest('tobi@h').should.equal('hotmail.com');
-      suggest('tobi@hotma').should.equal('hotmail.com');
-      suggest('tobi@hotmail.').should.equal('hotmail.com');
-      suggest('tobi@hotmail.c').should.equal('hotmail.com');
-      suggest('tobi@hotmail.com').should.equal('hotmail.com');
-      suggest('tobi@hotmail.co').should.equal('hotmail.com');
-      suggest('tobi@hotmail.co.').should.equal('hotmail.co.uk');
+      suggest('tobi@h').should.equal('otmail.com');
+      suggest('tobi@hotma').should.equal('il.com');
+      suggest('tobi@hotmail.').should.equal('com');
+      suggest('tobi@hotmail.c').should.equal('om');
+      suggest('tobi@hotmail.com').should.equal('');
+      suggest('tobi@hotmail.co').should.equal('m');
+      suggest('tobi@hotmail.co.').should.equal('uk');
     })
   })
 })

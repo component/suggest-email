@@ -13,13 +13,13 @@ suggest('foo@')
 // => ""
 
 suggest('foo@g')
-// => "gmail.com"
+// => "mail.com"
 
 suggest('foo@gmail')
-// => "gmail.com"
+// => ".com"
 
 suggest('foo@hot')
-// => "hotmail.com"
+// => "mail.com"
 ```
 
 ## License 
