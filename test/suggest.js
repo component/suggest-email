@@ -15,4 +15,10 @@ describe('suggest(email)', function(){
       suggest('hey-there').should.equal('');
     })
   })
+
+  describe('when only @ is present', function(){
+    it('should return ""', function(){
+      suggest('tobi@').should.equal('');
+    })
+  })
 })
