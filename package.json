@@ -1,0 +1,14 @@
+{
+    "name": "suggest-email"
+  , "version": "0.0.1"
+  , "description": "Email suggestion script"
+  , "keywords": ["email", "suggest", "suggestion"]
+  , "author": "TJ Holowaychuk <tj@learnboost.com>"
+  , "dependencies": {}
+  , "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  }
+  , "main": "index"
+  , "engines": { "node": "*" }
+}
