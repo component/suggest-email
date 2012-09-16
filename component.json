@@ -1,0 +1,7 @@
+{
+  "name": "suggest-email",
+  "version": "0.0.1",
+  "description": "Email suggestion from substrings",
+  "keywords": ["email", "suggest", "suggestion"],
+  "scripts": ["index.js"]
+}
