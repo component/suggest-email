@@ -18,10 +18,7 @@
             "suggest": "lib/suggest-email.js"
         }
     },
-    "main": "index",
-    "engines": {
-        "node": "*"
-    },
+    "main": "index.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/component/suggest-email.git"
